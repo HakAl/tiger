@@ -4,9 +4,7 @@ A small working agreement for coding agents: the smallest process that gets a
 task implemented, verified, and reviewed by a different model.
 
 It is one file, `AGENTS.md`. Codex and other agents that read `AGENTS.md` pick
-it up directly. For Claude Code, link it:
-
-    ln -s AGENTS.md CLAUDE.md
+it up directly.
 
 ## What it does
 
@@ -19,13 +17,11 @@ it up directly. For Claude Code, link it:
 
 ## Reviewer
 
-Any reviewer from a different model family works. If your agent is Claude,
-Codex, or anything else outside the Gemini family, I recommend
-[agy](https://antigravity.google/) (Google's Antigravity CLI, Gemini) as the
-reviewer: it is cheap (about $5/month as of
-October 2026, and the plan upgrades your whole Google account), and it catches
-things the implementing model misses in its own work. The review skill it runs
-is [reviewerest](https://github.com/HakAl/reviewerest).
+Any reviewer from a different model family works. If your agent is not Gemini,
+I recommend [agy-review](https://github.com/HakAl/agy-review): it runs Google's
+Antigravity CLI as the reviewer, which is cheap (about $5/month as of October
+2026, and the plan upgrades your whole Google account) and catches things the
+implementing model misses in its own work.
 
 ## Use
 
